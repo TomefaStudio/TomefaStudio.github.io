@@ -1,0 +1,186 @@
+body
+{
+    /*Initialisation*/
+    margin: 0;
+    padding: 0;
+    /*Apparence*/
+    background-color: black;
+    color: white;
+}
+*, ::before, ::after
+{
+    /*Ajustement des proportions*/
+    box-sizing: border-box;
+}
+.loaderContainer
+{
+    /*Proportions*/
+    width: 100vw;
+    height: 100vh;
+    /*Positionnement*/
+    z-index: 9999;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    background: rgb(0, 0, 17);
+    color: rgb(0, 114, 190);
+    /*Animations*/
+}
+.loader
+{
+    /*Proportions*/
+    width: 10vh;
+    height: 10vh;
+    /*Positionnement*/
+    z-index: 9999;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    /* background: rgb(0, 2, 114); */
+    color: rgb(0, 114, 190);
+    /*Animations*/
+    animation: rotateLoader 2s linear infinite;
+}
+@keyframes rotateLoader
+{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.fonduOut
+{
+    /*Faire fondre un élment html !*/
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.hidden
+{
+    /*Masquer un élément html !*/
+    display: none;
+}
+
+.fond
+{
+    /*Proportions*/
+    width: 100vw;
+    height: 100vh;
+    /*Positionnement*/
+    z-index: 0;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    /* transform: translate(-50%,-50%); */
+    /*Apparence*/
+    background: rgb(255, 255, 255);
+    color: rgb(0, 114, 190);
+    /*Animations*/
+}
+.banniere1
+{
+    /*Proportions*/
+    width: 100vw;
+    height: 25vh;
+    /*Positionnement*/
+    z-index: 0;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    /* transform: translate(-50%,-50%); */
+    /*Apparence*/
+    background: rgb(63, 0, 0);
+    color: rgb(0, 114, 190);
+    /*Animations*/
+}
+.banniere2
+{
+    /*Proportions*/
+    width: 100vw;
+    height: 1.5vh;
+    /*Positionnement*/
+    z-index: 0;
+    position: absolute;
+    left: 0%;
+    top: 25%;
+    /* transform: translate(-50%,-50%); */
+    /*Apparence*/
+    background: rgb(241, 150, 173);
+    color: rgb(0, 114, 190);
+    /*Animations*/
+}
+.icon
+{
+    /*Proportions*/
+    width: 11vh;
+    height: 11vh;
+    /*Positionnement*/
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 4%;
+    transform: translate(-50%,0%);
+    /*Apparence*/
+    /* background: rgb(255, 185, 185); */
+    color: rgb(0, 114, 190);
+    /*Animations*/
+}
+.titre
+{
+    /*Proportions*/
+    font-size: 3vh;
+    /*Positionnement*/
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 16%;
+    transform: translate(-50%,0%);
+    /*Apparence*/
+    /* background: rgb(255, 185, 185); */
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    /*Animations*/
+}
+.definition
+{
+    /*Proportions*/
+    font-size: 3vh;
+    /*Positionnement*/
+    z-index: 1;
+    position: absolute;
+    left: 0%;
+    top: 28%;
+    /* transform: translate(-50%,0%); */
+    /*Apparence*/
+    padding: 3vh;
+    border-radius: 3vh;
+    background: rgb(228, 0, 106);
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    /*Animations*/
+}
+.d
+{
+    /*Proportions*/
+    font-size: 3vh;
+    /*Positionnement*/
+    z-index: 1;
+    position: absolute;
+    left: 0%;
+    top: 39%;
+    /* transform: translate(-50%,0%); */
+    /*Apparence*/
+    padding: 3vh;
+    border-radius: 3vh;
+    background: rgb(155, 162, 255);
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    /*Animations*/
+}
