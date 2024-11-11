@@ -21,23 +21,23 @@
      id="defs10">
     <linearGradient
        inkscape:collect="always"
-       id="linearGradient850">
+       id="linearGradient842">
       <stop
          style="stop-color:#0075ff;stop-opacity:1"
          offset="0"
-         id="stop846" />
+         id="stop838" />
       <stop
          style="stop-color:#000000;stop-opacity:0;"
          offset="1"
-         id="stop848" />
+         id="stop840" />
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient850"
-       id="linearGradient852"
-       x1="5.0000019"
+       xlink:href="#linearGradient842"
+       id="linearGradient844"
+       x1="5.0000076"
        y1="150"
-       x2="295"
+       x2="294.99999"
        y2="150"
        gradientUnits="userSpaceOnUse" />
   </defs>
@@ -79,7 +79,7 @@
        id="path23"
        cx="150"
        cy="150"
-       style="fill:none;stroke:url(#linearGradient852);stroke-width:9.95443344;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       r="140.02278" />
+       style="fill:none;fill-opacity:1;stroke:url(#linearGradient844);stroke-width:10.0120697;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="139.99396" />
   </g>
 </svg>
