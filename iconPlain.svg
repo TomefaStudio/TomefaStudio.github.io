@@ -18,23 +18,23 @@
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="iconPlain.svg">
   <defs
-     id="defs846">
+     id="defs851">
     <linearGradient
        inkscape:collect="always"
-       id="linearGradient1408">
+       id="linearGradient1413">
       <stop
          style="stop-color:#00ffff;stop-opacity:1"
          offset="0"
-         id="stop1404" />
+         id="stop1409" />
       <stop
-         style="stop-color:#3b0080;stop-opacity:1"
+         style="stop-color:#c500ff;stop-opacity:1"
          offset="1"
-         id="stop1406" />
+         id="stop1411" />
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient1408"
-       id="linearGradient1410"
+       xlink:href="#linearGradient1413"
+       id="linearGradient1415"
        x1="5"
        y1="495"
        x2="495"
@@ -60,7 +60,7 @@
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
-     id="metadata849">
+     id="metadata854">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -76,8 +76,8 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:url(#linearGradient1410);fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect859"
+       style="fill:url(#linearGradient1415);fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect864"
        width="490"
        height="490"
        x="5"
@@ -89,18 +89,18 @@
     <path
        sodipodi:type="star"
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path1412"
+       id="path1417"
        sodipodi:sides="6"
-       sodipodi:cx="149.28571"
-       sodipodi:cy="142.85715"
-       sodipodi:r1="105.87102"
-       sodipodi:r2="52.935513"
-       sodipodi:arg1="0.94348813"
-       sodipodi:arg2="1.4670869"
+       sodipodi:cx="248.57143"
+       sodipodi:cy="256.42856"
+       sodipodi:r1="125.36681"
+       sodipodi:r2="62.683403"
+       sodipodi:arg1="1.0587172"
+       sodipodi:arg2="1.582316"
        inkscape:flatsided="true"
        inkscape:rounded="0.62"
        inkscape:randomized="0"
-       d="M 211.42856,228.57143 C 158.28571,267.1 166.06454,266.29036 106.12639,239.53158 46.188241,212.7728 50.778826,219.10464 43.983533,153.8173 37.18824,88.529951 33.999997,95.671436 87.142851,57.142866 140.28571,18.614296 132.50688,19.423939 192.44502,46.182716 c 59.93815,26.758777 55.34756,20.426935 62.14286,85.714284 6.79529,65.28734 9.98353,58.14586 -43.15932,96.67443 z"
-       transform="matrix(1.4163936,0.1520473,-0.1520473,1.4163936,54.559431,31.912654)" />
+       d="m 310,365.71427 c -67.75714,38.08572 -58.49672,38.1924 -125.35849,-1.44414 -66.86177,-39.63655 -62.32395,-31.56345 -61.42858,-109.28572 0.89537,-77.72227 -3.82723,-69.75585 63.92992,-107.84157 67.75714,-38.08572 58.49672,-38.1924 125.35849,1.44415 66.86178,39.63655 62.32395,31.56345 61.42858,109.28572 -0.89537,77.72227 3.82723,69.75585 -63.92992,107.84156 z"
+       transform="matrix(1.2093896,-0.01331909,0.01331909,1.2093896,-58.615712,-51.535787)" />
   </g>
 </svg>
