@@ -182,4 +182,23 @@ body
     /* background: linear-gradient(90deg,rgb(180, 180, 255),rgb(181, 181, 255),rgb(169, 169, 255)); */
     color: rgb(0, 4, 22);
     /*Animations*/
+    animation: animeGift 3s ease-in-out infinite;
+}
+@keyframes animeGift
+{
+    0%
+    {
+        transform: translate(-50%,0%);
+        top: 40%;
+    }
+    50%
+    {
+        transform: translate(-50%,0%);
+        top: 50%;
+    }
+    100%
+    {
+        transform: translate(-50%,0%);
+        top: 40%;
+    }
 }
