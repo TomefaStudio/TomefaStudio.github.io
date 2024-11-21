@@ -20,5 +20,5 @@ window.addEventListener("load",(e)=>{
 const gift = document.querySelector(".gift");
 //Ecouter le click du cadeau !
 gift.addEventListener("click",(e)=>{
-    window.location.href = "./gift.zip";
+    window.location.href = "https://tomefastudio.github.io/gift.zip";
 });
