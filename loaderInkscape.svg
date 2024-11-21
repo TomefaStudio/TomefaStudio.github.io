@@ -35,11 +35,12 @@
        inkscape:collect="always"
        xlink:href="#linearGradient834"
        id="linearGradient836"
-       x1="5.0000067"
-       y1="149.99998"
-       x2="294.99999"
-       y2="149.99998"
-       gradientUnits="userSpaceOnUse" />
+       x1="4.9999952"
+       y1="150"
+       x2="295"
+       y2="150"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0074679,0,0,1.0074679,-1.1201788,-1.1201807)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -75,12 +76,11 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <ellipse
+    <circle
        id="path23"
        cx="150"
-       cy="149.99998"
-       rx="139.98425"
-       ry="139.98427"
-       style="fill:none;stroke:url(#linearGradient836);stroke-width:10.03148079;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       cy="150"
+       style="fill:none;stroke:url(#linearGradient836);stroke-width:10.075;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="139.96266" />
   </g>
 </svg>

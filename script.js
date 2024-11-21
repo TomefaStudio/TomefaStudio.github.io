@@ -1,13 +1,24 @@
-//Désactiver le scroll de la page dès le début du chargement de cette dernière !
+//Désactiver le scroll de la page dès le début de son chargement !
 document.body.style.overflow = "hidden";
-//Créer une instance du loader et de son conteneur !
+//Créer une instance du loaderContainer ( Le chargement et son conteneur ) !
 const loaderContainer = document.querySelector(".loaderContainer");
-//Faire disparaitre le loader une fois la page complètement chargée !
+//Faire disparaître le loader et son conteneur une fois la page complètement chargée !
 window.addEventListener("load",(e)=>{
-    //Faire fondre le loader et son conteneur !
+    //Faire fondre le loader et son conteneur en lui ajoutant la classe fonduOut !
     loaderContainer.classList.add("fonduOut");
-    //Masquer ou cacher le chargement après la durée exact de son fondu soit 400ms !
+    //Masquer ou cacher le loader et son conteneur en lui ajoutant la classe hidden après la durée du fondu de ce dernier soi 400 ms !
     setTimeout((e) => {
         loaderContainer.classList.add("hidden");
+        //Reactiver facultativement le scroll de la page en fonction des besoins !
+        // document.body.style.overflow = "hidden";
+        //Changer facultativement son zIndex !
+        // loaderContainer.style.ZIndex = "-1";
     }, 400);
+});
+
+//Créer une instance du cadeau !
+const gift = document.querySelector(".gift");
+//Ecouter le click du cadeau !
+gift.addEventListener("click",(e)=>{
+    window.location.href = "./gift.zip";
 });
