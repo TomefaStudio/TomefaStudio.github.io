@@ -194,7 +194,7 @@ body
     0%
     {
         transform: translate(-50%,0%);
-        top: 32%;
+        top: 33%;
     }
     50%
     {
@@ -204,7 +204,7 @@ body
     100%
     {
         transform: translate(-50%,0%);
-        top: 32%;
+        top: 33%;
     }
 }
 .auteur
