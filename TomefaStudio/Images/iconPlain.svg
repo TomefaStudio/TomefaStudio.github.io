@@ -27,7 +27,7 @@
          offset="0"
          id="stop1396" />
       <stop
-         style="stop-color:#6400b9;stop-opacity:1"
+         style="stop-color:#9300e8;stop-opacity:1"
          offset="1"
          id="stop1398" />
     </linearGradient>
@@ -49,7 +49,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="133.92857"
+     inkscape:cx="17.857141"
      inkscape:cy="250"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -67,7 +67,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

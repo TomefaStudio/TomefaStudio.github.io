@@ -1,0 +1,646 @@
+@font-face {
+    font-family: "saira";
+    src:
+      local("saira"),
+      url("../fonts/saira.ttf") format("TrueType");
+  }
+  @font-face {
+    font-family: "Blessed";
+    src:
+      local("Blessed"),
+      url("../fonts/Blessed.otf") format("openType");
+  }
+  @font-face {
+    font-family: "Play-Regular";
+    src:
+      local("Play-Regular"),
+      url("../fonts/Play-Regular.ttf") format("TrueType");
+  }
+body
+{
+    /*Initialisation*/
+    margin: 0;
+    padding: 0;
+    /*Apparence*/
+    background-color: black;
+    color: white;
+}
+*, ::before, ::after
+{
+    /*Ajustement des proportions*/
+    box-sizing: border-box;
+}
+.loaderContainer
+{
+    /*Proportions*/
+    width: 100vw;
+    height: 100vh;
+    /*Positionnement*/
+    z-index: 9999;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    background: linear-gradient(180deg,rgb(0, 0, 17),rgb(0, 0, 17),rgb(0, 0, 17));
+    color: pink;
+    /*Animations*/
+}
+.loader
+{
+    /*Proportions*/
+    width: 9vh;
+    height: 9vh;
+    /*Positionnement*/
+    z-index: 9999;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    /* background: linear-gradient(180deg,red,green,blue); */
+    /* color: pink; */
+    /*Animations*/
+    animation: rotateLoader 2s linear infinite;
+}
+@keyframes rotateLoader
+{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.fonduOut
+{
+    /*Faire fondre un élément html !*/
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.hidden
+{
+    /*Masquer un élment html !*/
+    display: none;
+}
+
+/*Fond */
+.fond
+{
+    /*Proportions*/
+    width: 100vw;
+    height: 100vh;
+    /*Positionnement*/
+    z-index: 0;
+    position: absolute;
+    left: 0vw;
+    top: 0vh;
+    /* transform: translate(-50%,-50%); */
+    /*Apparence*/
+    background: linear-gradient(180deg,rgb(0, 0, 9),rgb(0, 0, 30),rgb(0, 0, 67));
+    color: pink;
+    /*Animations*/
+}
+.icon
+{
+    /*Proportions*/
+    width: 10.5vh;
+    height: 10.5vh;
+    /*Positionnement*/
+    z-index: 1;
+    position: fixed;
+    left: 50vw;
+    top: 4vh;
+    transform: translate(-50%,0%);
+    /*Apparence*/
+    /* background: linear-gradient(180deg,rgb(0, 0, 17),rgb(0, 0, 30),rgb(0, 0, 67)); */
+    /* color: pink; */
+    /*Animations*/
+}
+.titre
+{
+    /*Proportions*/
+    font-size: 2.1vh;
+    /*Positionnement*/
+    z-index: 1;
+    position: fixed;
+    left: 50vw;
+    top: 16vh;
+    transform: translate(-50%,0%);
+    /*Apparence*/
+    /* background: linear-gradient(180deg,rgb(0, 0, 17),rgb(0, 0, 30),rgb(0, 0, 67)); */
+    /* color: pink; */
+    font-family: Saira;
+    font-weight: 400;
+    color: rgb(197, 214, 255);
+    /* letter-spacing: 0.1vh; */
+    /*Animations*/
+}
+
+.message
+{
+    /*Proportions*/
+    width: 100vw;
+    height: 2vh;
+    font-size: 1.35vh;
+    /* width: 70vw; */
+    /*Positionnement*/
+    z-index: 1;
+    position: fixed;
+    left: 50%;
+    top: 40vh;
+    transform: translate(-50%,0%);
+    /*Apparence*/
+    /* background: linear-gradient(180deg,rgb(0, 0, 17),rgb(0, 0, 30),rgb(0, 0, 67)); */
+    /* color: pink; */
+    text-align: center;
+    font-family: saira;
+    font-weight: 400;
+    color: rgb(182, 201, 255);
+    letter-spacing: 0.5vh;
+    /*Animations*/
+}
+.start
+{
+    /*Proportions*/
+    font-size: 1.28vh;
+    /* width: 70vw; */
+    /*Positionnement*/
+    z-index: 1;
+    position: fixed;
+    left: 50vw;
+    top: 65vh;
+    transform: translate(-50%,0%);
+    /*Apparence*/
+    /* background: linear-gradient(180deg,rgb(0, 0, 17),rgb(0, 0, 30),rgb(0, 0, 67)); */
+    /* color: pink; */
+    font-family: saira;
+    font-weight: 450;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg,rgb(0, 183, 255),rgb(0, 119, 255));
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+    padding-top: 1.3vh;
+    padding-bottom: 1.3vh;
+    border-radius: 10vh;
+    letter-spacing: 0.1vh;
+    /* letter-spacing: 0.5vh; */
+    /*Animations*/
+}
+
+.tomefa
+{
+    /*Proportions*/
+    font-size: 1.2vh;
+    /* width: 70vw; */
+    /*Positionnement*/
+    z-index: 1;
+    position: fixed;
+    left: 50vw;
+    top: 95vh;
+    transform: translate(-50%,0%);
+    /*Apparence*/
+    /* background: linear-gradient(180deg,rgb(0, 0, 17),rgb(0, 0, 30),rgb(0, 0, 67)); */
+    /* color: pink; */
+    font-family: Play-Regular;
+    font-weight: 1;
+    color: rgb(126, 156, 255);
+    letter-spacing: 0.05vh;
+    /*Animations*/
+}
+/*Styliser et animer toutes les cellules de fond */
+/*Cellule 1*/
+.cellule1
+{
+   /*Proportions*/
+   width: 1.45vh;
+   height: 1.45vh;
+    /*Positionnement*/
+    z-index: 0;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    background: rgb(27, 145, 255);
+    color: pink;
+    border-radius: 0.4vh;
+    /*Animations*/
+    animation: anime1 1.6s ease-in-out infinite;
+}
+@keyframes anime1
+{
+    0%
+    {
+        opacity: 1;
+        transform: translate(-50%,-50%);
+        top: 60%;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translate(-50%,-50%);
+        top: 10%;
+    }
+}
+/*Cellule 2*/
+.cellule2
+{
+   /*Proportions*/
+   width: 1.45vh;
+   height: 1.45vh;
+    /*Positionnement*/
+    z-index: 0;
+    position: absolute;
+    left: 18%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    background: rgb(27, 145, 255);
+    color: pink;
+    border-radius: 0.4vh;
+    /*Animations*/
+    animation: anime2 1.8s ease-in-out infinite;
+}
+@keyframes anime2
+{
+    0%
+    {
+        opacity: 1;
+        transform: translate(-50%,-50%);
+        top: 60%;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translate(-50%,-50%);
+        top: 10%;
+    }
+}
+/*Cellule 3*/
+.cellule3
+{
+   /*Proportions*/
+   width: 1.45vh;
+   height: 1.45vh;
+    /*Positionnement*/
+    z-index: 0;
+    position: absolute;
+    left: 80%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    background: rgb(27, 145, 255);
+    color: pink;
+    border-radius: 0.4vh;
+    /*Animations*/
+    animation: anime2 1.7s ease-in-out infinite;
+}
+@keyframes anime3
+{
+    0%
+    {
+        opacity: 1;
+        transform: translate(-50%,-50%);
+        top: 60%;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translate(-50%,-50%);
+        top: 10%;
+    }
+}
+/*Cellule 4*/
+.cellule4
+{
+   /*Proportions*/
+   width: 1.45vh;
+   height: 1.45vh;
+    /*Positionnement*/
+    z-index: 0;
+    position: absolute;
+    left: 9%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    background: rgb(27, 145, 255);
+    color: pink;
+    border-radius: 0.4vh;
+    /*Animations*/
+    animation: anime4 1.4s ease-in-out infinite;
+}
+@keyframes anime4
+{
+    0%
+    {
+        opacity: 1;
+        transform: translate(-50%,-50%);
+        top: 45%;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translate(-50%,-50%);
+        top: 0%;
+    }
+}
+/*Cellule 5*/
+.cellule5
+{
+   /*Proportions*/
+   width: 1.45vh;
+   height: 1.45vh;
+    /*Positionnement*/
+    z-index: 0;
+    position: absolute;
+    left: 30%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    background: rgb(27, 145, 255);
+    color: pink;
+    border-radius: 0.4vh;
+    /*Animations*/
+    animation: anime5 1.5s ease-in-out infinite;
+}
+@keyframes anime5
+{
+    0%
+    {
+        opacity: 1;
+        transform: translate(-50%,-50%);
+        top: 45%;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translate(-50%,-50%);
+        top: 0%;
+    }
+}
+/*Cellule 6*/
+.cellule6
+{
+   /*Proportions*/
+   width: 1.45vh;
+   height: 1.45vh;
+    /*Positionnement*/
+    z-index: 0;
+    position: absolute;
+    left: 72%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    background: rgb(27, 145, 255);
+    color: pink;
+    border-radius: 0.4vh;
+    /*Animations*/
+    animation: anime6 1.6s ease-in-out infinite;
+}
+@keyframes anime6
+{
+    0%
+    {
+        opacity: 1;
+        transform: translate(-50%,-50%);
+        top: 45%;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translate(-50%,-50%);
+        top: 0%;
+    }
+}
+/*Cellule 7*/
+.cellule7
+{
+   /*Proportions*/
+   width: 1.45vh;
+   height: 1.45vh;
+    /*Positionnement*/
+    z-index: 0;
+    position: absolute;
+    left: 90%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    background: rgb(27, 145, 255);
+    color: pink;
+    border-radius: 0.4vh;
+    /*Animations*/
+    animation: anime7 1.7s ease-in-out infinite;
+}
+@keyframes anime7
+{
+    0%
+    {
+        opacity: 1;
+        transform: translate(-50%,-50%);
+        top: 45%;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translate(-50%,-50%);
+        top: 0%;
+    }
+}
+/*Cellule 8*/
+.cellule8
+{
+   /*Proportions*/
+   width: 1.45vh;
+   height: 1.45vh;
+    /*Positionnement*/
+    z-index: 0;
+    position: absolute;
+    left: 9%;
+    top: 95%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    background: rgb(27, 145, 255);
+    color: pink;
+    border-radius: 0.4vh;
+    /*Animations*/
+    animation: anime8 1.4s ease-in-out infinite;
+}
+@keyframes anime8
+{
+    0%
+    {
+        opacity: 1;
+        transform: translate(-50%,-50%);
+        top: 90%;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translate(-50%,-50%);
+        top: 40%;
+    }
+}
+/*Cellule 9*/
+.cellule9
+{
+   /*Proportions*/
+   width: 1.45vh;
+   height: 1.45vh;
+    /*Positionnement*/
+    z-index: 0;
+    position: absolute;
+    left: 28%;
+    top: 95%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    background: rgb(27, 145, 255);
+    color: pink;
+    border-radius: 0.4vh;
+    /*Animations*/
+    animation: anime9 1.3s ease-in-out infinite;
+}
+@keyframes anime9
+{
+    0%
+    {
+        opacity: 1;
+        transform: translate(-50%,-50%);
+        top: 90%;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translate(-50%,-50%);
+        top: 45%;
+    }
+}
+/*Cellule 10*/
+.cellule10
+{
+   /*Proportions*/
+   width: 1.45vh;
+   height: 1.45vh;
+    /*Positionnement*/
+    z-index: 0;
+    position: absolute;
+    left: 74%;
+    top: 95%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    background: rgb(27, 145, 255);
+    color: pink;
+    border-radius: 0.4vh;
+    /*Animations*/
+    animation: anime10 1.4s ease-in-out infinite;
+}
+@keyframes anime10
+{
+    0%
+    {
+        opacity: 1;
+        transform: translate(-50%,-50%);
+        top: 90%;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translate(-50%,-50%);
+        top: 45%;
+    }
+}
+/*Cellule 11*/
+.cellule11
+{
+   /*Proportions*/
+   width: 1.45vh;
+   height: 1.45vh;
+    /*Positionnement*/
+    z-index: 0;
+    position: absolute;
+    left: 91%;
+    top: 95%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    background: rgb(27, 145, 255);
+    color: pink;
+    border-radius: 0.4vh;
+    /*Animations*/
+    animation: anime11 1.6s ease-in-out infinite;
+}
+@keyframes anime11
+{
+    0%
+    {
+        opacity: 1;
+        transform: translate(-50%,-50%);
+        top: 90%;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translate(-50%,-50%);
+        top: 45%;
+    }
+}
+
+/*Flitre*/
+.start2
+{
+    /*Proportions*/
+    font-size: 1.2vh;
+    /* width: 70vw; */
+    /*Positionnement*/
+    z-index: 0;
+    position: fixed;
+    left: 50vw;
+    top: 65vh;
+    transform: translate(-50%,0%);
+    /*Apparence*/
+    /* background: linear-gradient(180deg,rgb(0, 0, 17),rgb(0, 0, 30),rgb(0, 0, 67)); */
+    /* color: pink; */
+    font-family: saira;
+    font-weight: 470;
+    color: rgb(1, 183, 255);
+    background: linear-gradient(90deg,rgb(67, 196, 255),rgb(0, 140, 255));
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+    padding-top: 1.3vh;
+    padding-bottom: 1.3vh;
+    border-radius: 10vh;
+    letter-spacing: 0.1vh;
+    /* letter-spacing: 0.5vh; */
+    filter: blur(0.5vh);
+    /*Animations*/
+}
+/*Flitre*/
+.start3
+{
+    /*Proportions*/
+    font-size: 1.2vh;
+    /* width: 70vw; */
+    /*Positionnement*/
+    z-index: 0;
+    position: fixed;
+    left: 50vw;
+    top: 65vh;
+    transform: translate(-50%,0%);
+    /*Apparence*/
+    /* background: linear-gradient(180deg,rgb(0, 0, 17),rgb(0, 0, 30),rgb(0, 0, 67)); */
+    /* color: pink; */
+    font-family: saira;
+    font-weight: 470;
+    color: rgb(5, 1, 255);
+    background: linear-gradient(90deg,rgb(0, 4, 255),rgb(25, 0, 255));
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+    padding-top: 1.3vh;
+    padding-bottom: 1.3vh;
+    border-radius: 10vh;
+    letter-spacing: 0.1vh;
+    /* letter-spacing: vh; */
+    filter: blur(2vh);
+    /*Animations*/
+}
