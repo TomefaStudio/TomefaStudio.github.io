@@ -90,3 +90,5 @@ body
     color: lime;
     /*Animations*/
 }
+
+.earth::selection { background: transparent }
