@@ -1,0 +1,92 @@
+body
+{
+    /*Initialisation*/
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    /*Apparence*/
+    background-color: rgb(0, 4, 20);
+    color: white;
+}
+*, ::before, ::after
+{
+    /*Ajustement des proportions*/
+    box-sizing: border-box;
+}
+.loaderContainer
+{
+    /*Proportions*/
+    width: 100vw;
+    height: 100vh;
+    /*Positionnement*/
+    z-index: 9999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    background: rgb(0, 0, 17);
+    color: lime;
+    /*Animations*/
+}
+.loader
+{
+    /*Proportions*/
+    width: 9vh;
+    height: 9vh;
+    /*Positionnement*/
+    z-index: 9999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    /* background: red; */
+    /* color: lime; */
+    /*Animations*/
+    animation: rotateLoader 2s linear infinite;
+}
+@keyframes rotateLoader
+{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.fonduOut
+{
+    /*faire fondre un élement html !*/
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.hidden
+{
+    /*Masquer ou cacher un élment html !*/
+    display: none;
+}
+
+.rotationMove
+{
+    animation: rotateLoader 12s linear infinite;
+}
+
+.fond
+{
+    /*Proportions*/
+    width: 100vw;
+    height: 100vh;
+    /*Positionnement*/
+    z-index: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /*Apparence*/
+    background: rgb(0, 0, 17);
+    color: lime;
+    /*Animations*/
+}
