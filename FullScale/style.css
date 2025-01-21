@@ -95,3 +95,8 @@ body
 {
     background: rgb(0, 0, 17);
 }
+
+.earth
+{
+    user-select: none;
+}
