@@ -91,4 +91,7 @@ body
     /*Animations*/
 }
 
-.earth::selection { background: transparent }
+.earth::selection
+{
+    background-color:rgb(0, 4, 20);
+}
